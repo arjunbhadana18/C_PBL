@@ -25,7 +25,7 @@ export default function Page() {
   return (
     <div className="shell">
       <aside className="side">
-        <div className="brand">Skip List<span>Lab</span></div>
+        <div className="brand">Skip List<span></span></div>
         <nav>{TABS.map(([k, t]) => <button key={k} className={tab === k ? 'on' : ''} onClick={() => setTab(k)}>{t}</button>)}</nav>
         <div className="prefs">
           <label>Animation speed<input type="range" min="1" max="10" value={speed} onChange={(e) => setSpeed(+e.target.value)} /></label>
