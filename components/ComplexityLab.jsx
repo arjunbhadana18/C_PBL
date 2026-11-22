@@ -15,7 +15,7 @@ export default function Complexity({ active }) {
       {last && <Stats items={[['Keys measured', last.n.toLocaleString()], ['Skip list comparisons', last.sl.toFixed(1)], ['AVL comparisons', last.av.toFixed(1)], ['log₂ n', last.lg.toFixed(1)]]} />}
       <section className="card">
         <h2>Average comparisons per search</h2>
-        <p className="mut">Real skip lists and AVL trees are built from n random keys, then 3,000 random searches are counted. Lower is better.</p>
+        <p className="mut">Real skip lists and AVL trees are built from n random keys, then 3,000 random searches are counted. </p>
         <button onClick={run} disabled={busy}>{busy ? 'Measuring…' : 'Run the measurement again'}</button>
         {rows && <div dangerouslySetInnerHTML={{ __html: chart(rows) }} />}
         {rows && <table><thead><tr><th>Keys (n)</th><th>Skip list</th><th>AVL tree</th><th>log₂ n</th><th>Skip list levels</th><th>AVL height</th></tr></thead>
