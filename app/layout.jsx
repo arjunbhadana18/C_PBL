@@ -1,7 +1,7 @@
 import './globals.css'
 
 export const metadata = {
-  title: 'Skip List Lab',
+  title: 'Skip List ',
   description: 'Interactive skip list visualizer: search, insert, delete, range queries, a leaderboard and a complexity graph.',
 }
 
